@@ -1,0 +1,28 @@
+/* pages/person/person.wxss */
+page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.userinfo {
+  width: 750rpx;
+  height: 320rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: thin #CCCCCC solid;
+}
+.userinfo-avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 160rpx;
+  width: 160rpx;
+  margin: 20rpx;
+  margin-top: 50rpx;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2)
+}
+
+user-name {
+  font-size: 14px;
+}

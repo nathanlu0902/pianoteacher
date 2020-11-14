@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/qrcode/qrcode",
+    "pages/person/person",
+    "pages/calendar/calendar"
+  ],
+  "sitemapLocation": "sitemap.json",
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "老师端",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list":[{
+      "text" : "首页",
+      "pagePath": "pages/home/home"
+    }, {
+      "text" : "签到",
+      "pagePath": "pages/qrcode/qrcode"
+    }, {
+      "text" : "个人",
+      "pagePath" : "pages/person/person"
+    }]
+  },
+  "usingComponents": {
+    "calendar" : "/components/calendar/index"
+  }
+}
