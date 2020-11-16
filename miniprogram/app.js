@@ -12,5 +12,14 @@ App({
     }
 
     this.globalData = {}
+  },
+  onload: function () {
+    const stu_db=wx.cloud.database()
+    stu_db.collection('student').get().then(res=>{
+      console.log(res.data)
+    })
+    .catch(err=>{
+      console.error(err)
+    })
   }
 })
