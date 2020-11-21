@@ -8,7 +8,14 @@
   <view class="content">
     <scroll-view class="student-list" enable-back-to-top="true" scroll-y="true" scroll-with-animation="true">
       <view class="students" wx:for="{{student_list}}" wx:for-item="student" wx:for-key="">
-        <view>{{student.name}}</view>
+        <view class="stu-item-wrapper">
+        <view class="stu-item-text">
+          <text class="stu-item-name">{{student.name}}</text>
+        </view>
+        <view class="stu-item-btn-wrapper">
+          <button class="stu-item-btn">></button>
+        </view>
+        </view>
       </view>
     </scroll-view>
   </view>
