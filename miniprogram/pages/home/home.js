@@ -11,6 +11,13 @@ Page ({
       content: '确认签到吗？',
       success (res) {
         if (res.confirm) {
+          wx.cloud.callFunction({
+            name: 'checkin',
+            data: {},
+            success: res => (
+              console.log(res)
+            )
+          })
           that.setData (
             console.log('successful'),function () {
               wx.showToast({
@@ -28,8 +35,20 @@ toCalendar: function (event) {
   wx.navigateTo({
     url: '/pages/calendar/calendar',
     success: function (res) {
-      console.log ("success")
+      console.log ("to calendar")
     }
+  })
+},
+toStu: function (event) {
+  wx.navigateTo({
+    url: '/pages/stu_detail/stu_detail',
+    success: function (res) {
+      console.log ("to stu_detail")
+    },
+    fail: function (res) {
+      console.error(res)
+    }
+
   })
 }
 })

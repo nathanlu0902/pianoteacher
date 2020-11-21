@@ -1,0 +1,3 @@
+<view>
+  <button class="add-stu-btn" bindtap="add_stu">添加学生</button>
+</view>

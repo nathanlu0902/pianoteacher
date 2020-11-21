@@ -3,7 +3,10 @@
     "pages/home/home",
     "pages/qrcode/qrcode",
     "pages/person/person",
-    "pages/calendar/calendar"
+    "pages/calendar/calendar",
+    "pages/add_stu/add_stu",
+    "pages/stu_detail/stu_detail"
+    
   ],
   "sitemapLocation": "sitemap.json",
   "window": {

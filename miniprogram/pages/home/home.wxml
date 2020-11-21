@@ -2,16 +2,17 @@
 <view class="welcome-message">
   <text class="welcome">Welcome {{username}}</text>
   <text class="date">今天是{{today}}</text>
+  <text class="today-lesson">你有{{numOfClass}}节与{{teacher}}老师的课</text>
 </view>
 <view class="next">
-  <p class="next-title">Next:</p>
-  <view class="item" wx:for="{{nextitems}}">
-    <p>{{item}}</p>
+  <text class="next-title">Next:</text>
+  <view class="item" wx:for="{{nextitems}}" wx:for-item="item" wx:key="id">
+    <text>{{item}}</text>
   </view>
 </view>
-<button id="sign-button" class="weui-btn_primary" bindtap="handleSign">签到</button>
 <view class="button-list">
-  <button class="weui-btn_default">课程管理</button>
+  <button id="sign-button" class="weui-btn_primary" bindtap="handleSign">签到</button>
+  <button class="weui-btn_default" bindtap="toStu">学生管理</button>
   <button class="weui-btn_default" bindtap="toCalendar">我的课表</button>
 </view>
 </view>

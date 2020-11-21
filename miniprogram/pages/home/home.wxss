@@ -3,20 +3,26 @@
   height: 25%;
   width: 100%;
   display: flex;
-  padding: .86rem;
-  margin: 1rem 1rem;
+  padding: 40rpx 40rpx ;
   flex-direction: column;
   justify-content: center;
 }
 .welcome {
-  font-size: 21px;
+  font-size: 25px;
   font-weight: Meidum;
   
 }
 .date {
   font-size: 14px;
   font-weight: Regular;
-  color: #606060
+  color: #606060;
+  margin-top: 10rpx;
+}
+.today-lesson {
+  font-size: 14px;
+  font-weight: Regular;
+  color: #606060;
+  margin-top: 10rpx;
 }
 
 .next {
@@ -35,22 +41,22 @@
 }
 
 .button-list {
-  width: 80%;
-  padding: .86rem;
-  margin: 1rem 1rem;
+  margin-top: 100rpx;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
 .weui-btn_default {
   background: #0099CC;
   color: black;
+  margin-top: 50rpx;
+  width: 40%;
 }
 
 #sign-button {
-  width: 25%;
   background: #FF6666;
   color: black;
+  margin-top: 50rpx;
+  width: 60%;
 }
