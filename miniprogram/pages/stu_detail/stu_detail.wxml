@@ -1,3 +1,15 @@
 <view>
+  <view class="search-bar">
+    <input class="search-input" type="text" placeholder="搜索" maxlength="20" />
+  </view>
+  <view class="btn-wrapper">
   <button class="add-stu-btn" bindtap="add_stu">添加学生</button>
+  </view>
+  <view class="content">
+    <scroll-view class="student-list" enable-back-to-top="true" scroll-y="true" scroll-with-animation="true">
+      <view class="students" wx:for="{{student_list}}" wx:for-item="student" wx:for-key="">
+        <view>{{student.name}}</view>
+      </view>
+    </scroll-view>
+  </view>
 </view>
