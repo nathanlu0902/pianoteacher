@@ -1,0 +1,12 @@
+<view>
+<view class="photo-wrapper">
+  <image class="photo" src="" style=""></image>
+</view>
+
+<view class="infoItem" wx:for="stuInfo" wx:for-item="stuItem" wx:key="key">
+  <text class="key">{{key}}</text>
+  <text class="value">{{stuItem}}</text>
+</view>
+
+
+</view>

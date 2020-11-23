@@ -1,0 +1,39 @@
+page {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 30rpx;
+  border-bottom: thin solid #BBBBBB;
+}
+
+.info {
+  text-align: left;
+  width: 30%;
+  margin: 10rpx 20rpx;
+  height: 100%;
+  padding: 0 20rpx;
+}
+
+.weui-input {
+  width: 70%;
+  padding: 10rpx 40rpx;
+  text-align: right;
+}
+
+.btn-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 50rpx;
+}
+.form-btn {
+  width: 60%;
+  margin: 20rpx auto;
+}
